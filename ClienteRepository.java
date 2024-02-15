@@ -10,3 +10,6 @@ public interface ClienteRepository extends JpaRepository<Clientes, Long>{
 //oferecer operações basicas do CRUD
 	
 }
+//JpaRepository<Clientes, Long>: Especifica que esta interface está associada à entidade Clientes e usa chaves primárias do tipo Long.
+
+//List<Clientes> findAll();: Define um método para recuperar todos os registros da entidade Clientes no banco de dados. O Spring Data JPA implementa automaticamente este método, permitindo que você busque todos os registros sem a necessidade de escrever a consulta SQL manualmente.
